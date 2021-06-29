@@ -412,15 +412,19 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-.footer-link {
-    display: block;
+
+.footer-list-menu:not(:last-child) {
     margin-bottom: 9px;
+}
+
+.footer-link {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--footer-link-color);
 }
+
 .location {
     color: var(--secondary-color);
 }
