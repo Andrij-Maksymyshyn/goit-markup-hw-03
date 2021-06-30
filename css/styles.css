@@ -72,7 +72,7 @@ body {
 /*Стилізація хедера*/
 
 .header {
-    border: 1px solid var(--header-border-color);
+    border-bottom: 1px solid var(--header-border-color);
 }
 
 .header,
@@ -83,7 +83,6 @@ body {
 .header-container {
     display: flex;
     align-items: center;
-    height: 100%;
 }
 
 .navigation {
@@ -100,8 +99,8 @@ body {
     letter-spacing: 0.03em;
     color: var(--secondary-color);
     margin-right: 92px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-icon-web {
@@ -114,15 +113,15 @@ body {
 
 .list-item-link {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--main-color);
 }
 
 .list-item-link-current {
     color: var(--accent-color);
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .list-item-link:hover,
@@ -152,7 +151,7 @@ body {
 
 .hero {
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
     background-color: var(--hero-footer-color);
     text-align: center;
 }
@@ -229,7 +228,6 @@ body {
 }
 
 .plus-text {
-    text-align: justify;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -240,7 +238,7 @@ body {
 /*Секція works*/
 
 .works {
-    padding-top: 94px;
+    padding-top: 47px;
     padding-bottom: 94px;
 }
 
@@ -279,7 +277,6 @@ body {
 /*Секція our-team*/
 
 .our-team {
-    padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--our-team-color);
 }
@@ -294,13 +291,22 @@ body {
     width: 270px;
 }
 
-.team-item:not(:last-child) {
+.team-item {
     margin-right: 30px;
+    background-color: var(--secondary-color);
+}
+
+.team-item:last-child {
+    margin-right: 0;
+}
+
+.team-description {
+    display: inline;
+    padding: 30px 60px;
 }
 
 .third-title {
     font-weight: 500;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -391,6 +397,7 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-color);
+    margin-bottom: 4px;
 }
 
 .portfolio-text {
